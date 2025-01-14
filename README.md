@@ -1,4 +1,37 @@
-# Salon Appointment Scheduler
+Build a Salon Appointment Scheduler
+===================================
+
+This is one of the required projects to earn your certification. For this project, you will create an interactive Bash program that uses PostgreSQL to track the customers and appointments for your salon.
+
+This course runs in a virtual Linux machine using Gitpod. Follow these instructions to start the course:
+
+1.  [Create a GitHub](https://github.com/join "Source Code Link") account if you don't have one
+2.  Click the start button below
+3.  Login to Gitpod with your GitHub account if you aren't already
+4.  Once the virtual Linux machine is finished loading, start the CodeRoad extension by:
+    *   Clicking the "hamburger" menu near the top left of the VSCode window,
+    *   Going to the "View" menu,
+    *   Clicking on the "Command Palette" option,
+    *   and running the "CodeRoad: Start" command
+5.  Follow the instructions in CodeRoad to complete the course
+
+Complete both steps below to finish the challenge.
+
+* * *
+
+Step 1: Complete the project
+----------------------------
+
+The project runs in a virtual machine, complete the user stories described in there and get all the tests to pass to finish step 1.
+
+**Important:** After you pass all the project tests, save a dump of your database into a `salon.sql` file, as well as your `salon.sh` file, so you can complete step 2. There will be instructions how to do that within the virtual machine.
+
+> Clicking the button below will start a new project. If you have previously started the Build a Salon Appointment Scheduler course, go to [your Gitpod dashboard](https://gitpod.io/workspaces) to continue.
+> 
+> Learn more about [Gitpod workspaces.](https://forum.freecodecamp.org/t/using-gitpod-in-the-curriculum/668669)
+
+> If you log out of freeCodeCamp before you complete the entire Build a Salon Appointment Scheduler course, your progress will not be saved to your freeCodeCamp account.
+
 #### Open [file `solution.txt`](solution.txt) To follow my terminal command. Solutions divided into several steps :
     1. Create Database and connect to it.
     2. Create tables as required conditions.
@@ -8,15 +41,10 @@
     6. Create shell scipt files and give executable permission to the file.
     7. Copy & Run shell script salon.sh file.
 
-#### Documentation can be found on : [https://github.com/viktoriussuwandi/Salon-Appointment-Scheduler](https://github.com/viktoriussuwandi/Salon-Appointment-Scheduler)
-
-This is the result to complete the Salon Appointment Scheduler project. 
-Instructions for building this project can be found at [https://www.freecodecamp.org/learn/relational-database/build-a-salon-appointment-scheduler-project/build-a-salon-appointment-scheduler](https://www.freecodecamp.org/learn/relational-database/build-a-salon-appointment-scheduler-project/build-a-salon-appointment-scheduler)
-
 ## Instructions
 Follow the instructions and get all the user stories below to pass to finish the project. Create your database by logging in to psql with `psql --username=freecodecamp --dbname=postgres`. You can query the database in your script with `psql --username=freecodecamp --dbname=salon -c "SQL QUERY HERE"`, add more flags if you need to. Be sure to get creative, and have fun!
 
-**Don't forget to connect to your database to add tables after you create it** 😄
+**Don't forget to connect to your database to add tables after you create it**
 
 Hints:
 Your script needs to finish running after doing any of the tasks described below or the tests won't pass
@@ -50,3 +78,12 @@ If you are saving your progress on [freeCodeCamp.org](freeCodeCamp.org), after g
 19. You can create a row in the `appointments` table by running your script and entering `1`, `555-555-5555`, `Fabio`, `10:30` at each `request` for input if that `phone number` isn’t in the `customers` table. The row should have the `customer_id` for that `customer`, and the `service_id` for the `service` entered.
 20. You can create another row in the `appointments` table by running your script and entering `2`, `555-555-5555`, `11am` at each request for `input` if that `phone number` is already in the `customers` table. The row should have the `customer_id` for that `customer`, and the `service_id` for the `service` entered.
 21. After an `appointment` is successfully added, you should output the message `I have put you down for a <service> at <time>, <name>`. For example, if the user chooses `cut` as the `service`, `10:30` is entered for the `time`, and their `name` is `Fabio` in the database the output would be `I have put you down for a cut at 10:30, Fabio`. Make sure your script finishes running after completing any of the tasks above, or else the tests won't pass.
+
+* * *
+
+Step 2: Submit your code
+------------------------
+
+When you have completed the project, save all the required files into a public repository and submit the URL to it below.
+
+Required files: `salon.sql`, `salon.sh`
